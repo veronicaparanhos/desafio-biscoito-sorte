@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+
+  width: 42.8rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+/* screen 1 */
+
+h1 {
+  color: #34355b;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  color: #34355b;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  margin-bottom: 2rem;
+}
+
+.screen1 img:hover {
+  animation: tremor 0.2s ease-in-out infinite;
+}
+
+@keyframes tremor {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, -5px);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+  75% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(5px, -5px);
+  }
+}
+
+/* screen 2 */
+
+.screen2 {
+  margin: 0 auto;
+  position: relative;
+}
+
+.screen2 h1 {
+  margin-bottom: 10rem;
+}
+
+.screen2 p {
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(85, 85, 85, 0.5);
+
+  padding: 1rem;
+
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  top: 8rem;
+  animation-duration: 0.5s;
+  animation-name: up;
+  position: absolute;
+  object-fit: contain;
+}
+
+.screen2 img {
+  margin-top: 5rem;
+}
+
+#screen2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border: none;
+  border-radius: 0.4rem;
+  background: #ff9500;
+  padding: 1.6rem;
+
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+
+  margin-top: 5rem;
+}
+
+@keyframes up {
+  0% {
+    top: 25rem;
+    width: 9rem;
+    height: 1rem;
+    font-size: 0.1rem;
+    line-height: 0.1rem;
+  }
+  25% {
+    top: 20rem;
+    width: 14rem;
+    height: 2.5rem;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  50% {
+    top: 15rem;
+    width: 19rem;
+    height: 5rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  75% {
+    top: 10rem;
+    width: 24rem;
+    height: 7.5rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  100% {
+    top: 7rem;
+    width: 29.3rem;
+    height: 10.7rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+}
